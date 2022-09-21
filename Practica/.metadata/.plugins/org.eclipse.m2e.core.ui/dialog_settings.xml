@@ -2,6 +2,9 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\Bruno\OneDrive\Escritorio\Facultadf\Segundo Anio\Segundo Cuatrimestre\OO1\OO1-\Practica\ejercicio5"/>
+			<item value="C:\Users\Bruno\OneDrive\Escritorio\Facultadf\Segundo Anio\Segundo Cuatrimestre\OO1\OO1-\Practica\ejercicio4"/>
+			<item value="C:\Users\Bruno\OneDrive\Escritorio\Facultadf\Segundo Anio\Segundo Cuatrimestre\OO1\OO1-\Practica\ejercicio3"/>
 			<item value="C:\Users\Bruno\OneDrive\Escritorio\ejercicio1-wallpost"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -15,6 +18,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\Bruno\OneDrive\Escritorio\Facultadf\Segundo Anio\Segundo Cuatrimestre\OO1\OO1-\Practica"/>
 			<item value="C:\Users\Bruno\OneDrive\Escritorio\Facultadf\Segundo Anio\Segundo Cuatrimestre\OO1\Practica"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -39,12 +43,16 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ejercicio8"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio6"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio2"/>
 		</list>
 		<list key="groupId">
 			<item value="ar.edu.unlp.info.oo1  "/>
 		</list>
 		<list key="artifactId">
+			<item value="ejercicio8"/>
+			<item value="ejercicio6"/>
 			<item value="ejercicio2"/>
 		</list>
 		<list key="projectNameTemplate">
