@@ -2,6 +2,8 @@ package ar.edu.unlp.info.oo1.ejercicio8;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
 
 public class Usuario {
 	
@@ -17,20 +19,27 @@ public class Usuario {
 		this.fac = new ArrayList<Factura>();
 	}
 	
-	public void agregarMedicion(Consumo medicion  ) {
-		this.con.add(medicion);
-	}
-	
-	public double ultimoConsumoActiva() {
-		this.con.stream().max((unaFecha, otraFecha) -> unaFecha.getFecha());
-		return 2;
-	}
+	public Optional<Consumo> ultimoConsumo() {
+        Stream <Consumo>consumosOrdenados = this.con.stream().sorted((c1, c2)-> c2.getFecha().compareTo(c1.getFecha()));
+        Optional<Consumo> ultimoConsumo = consumosOrdenados.findFirst();
+        return ultimoConsumo;
+    }
 
-	
-	public List<Factura> facturas(){
-		return this.fac;
-	}
+    public double ultimoConsumoActiva() {
+        Optional<Consumo> ultimoConsumo = ultimoConsumo();
+        if (ultimoConsumo != null) {
+            return ultimoConsumo.get().getConsumoEnergiaActiva();
+        }
+        return 0;
+    }
 
+    public Factura facturarEnBaseA(double unPrecioKWH) {
+        double descuento = 1; 
+        Optional<Consumo> ultimoConsumo = ultimoConsumo();
+        if (ultimoConsumo.get().factorDePotencia() > 0.8) {descuento = 0.1;}
+        Factura unaFactura = new Factura(ultimoConsumoActiva(),descuento ,this);
 
+        return unaFactura;
+    }
 }
 

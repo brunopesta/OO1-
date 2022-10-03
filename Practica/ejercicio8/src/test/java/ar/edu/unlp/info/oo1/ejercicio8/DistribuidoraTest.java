@@ -15,8 +15,8 @@ public class DistribuidoraTest {
 
 	@BeforeEach
 	public void setUp() {
-		this.distribuidora = new Distribuidora(50d);
-		this.redCompleta = new Distribuidora(10d);
+		this.distribuidora = new Distribuidora(50);
+		this.redCompleta = new Distribuidora(10);
 
 		mercedes = new Usuario("Mercedes", "Calle Sosa 99, San Miguel de Tucuman");
 		pablo = new Usuario("Pablo", "Calle Picasso 23, Paris");

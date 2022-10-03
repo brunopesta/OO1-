@@ -7,9 +7,11 @@ public class Distribuidora {
 
 	private List<Usuario> usuarios;
 	private double precioKWh;
+	private List<Consumo> consumo;
 	
-	public Distribuidora() {
+	public Distribuidora( double precio) {
 		this.usuarios = new ArrayList<Usuario>();
+		this.precioKWh = precio;
 	}
 	
 	public void agregarUsuario( Usuario user) {
@@ -19,10 +21,11 @@ public class Distribuidora {
 	public double precioKWh() {
 		return this.precioKWh;
 	}
-	
 	public double consumoTotalActiva() {
-		
-		
-		return null;
-	}
+        double total = 0;
+        for (int i = 0; i < usuarios.size();i++) { 
+            total += usuarios.get(i).ultimoConsumoActiva();
+        }
+        return total;
+    }
 }

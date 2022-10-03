@@ -14,6 +14,7 @@ public class Factura {
 		this.montoEnergiaActiva = monto;
 		this.descuento = desc;
 		this.user = unUser;
+		this.fecha.now();
 	}
 
 
@@ -22,7 +23,7 @@ public class Factura {
 		return this.descuento;
 	}
 
-	public Date getFecha() {
+	public LocalDate getFecha() {
 		return this.fecha;
 	}
 	
@@ -34,6 +35,6 @@ public class Factura {
 	}
 
 	public double montoTotal() {
-		return (this.montoEnergiaActiva - this.descuento);
+		return (this.montoEnergiaActiva -((this.montoEnergiaActiva * this.descuento) / 100));
 	}
 }
