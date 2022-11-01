@@ -43,6 +43,10 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.ejercicio14"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio13"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio12"/>
+			<item value="ar.edu.unlp.info.oo1.ejercicio11"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio10"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio9"/>
 			<item value="ar.edu.unlp.info.oo1.ejercicio8"/>
@@ -53,6 +57,10 @@
 			<item value="ar.edu.unlp.info.oo1  "/>
 		</list>
 		<list key="artifactId">
+			<item value="ejercicio14"/>
+			<item value="ejercicio13"/>
+			<item value="ejercicio12"/>
+			<item value="ejercicio11"/>
 			<item value="ejercicio10"/>
 			<item value="ejercicio9"/>
 			<item value="ejercicio8"/>
